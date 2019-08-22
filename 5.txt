@@ -1,0 +1,6 @@
+<Additional>
+
+In order to see hidden files in the Linux, you can give `-a` option to `ls`
+command
+
+<type `ls -a`>

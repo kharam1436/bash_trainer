@@ -1,0 +1,8 @@
+
+The `ls` command shows the file list of files; however it does not show what is
+directory or file.
+
+In order to check directory and file, we are going to invoke option `-l`
+"use a long listing format"
+
+< type `ls -l` command >

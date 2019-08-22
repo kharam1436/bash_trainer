@@ -1,0 +1,19 @@
+Now, it shows more information, we are going to learn more detail about each
+folder in later training course.
+
+Here is some list.
+
+-rw-r--r--. 1 root root   210 Aug 22 09:41 1.txt
+drwxr-xr-x. 2 root root     6 Aug 22 10:06 test
+
+'-rw-r--r--' and 'drwxr-xr-x' shows permission information and whether it is
+directory or not.
+
+If it start with 'd', then it is directory, and if it start with '-', then it
+is a file.
+
+Additionally, '210' and '6' show the file size in byte.
+
+We have a quiz to practice.
+
+<press any key to proceed>

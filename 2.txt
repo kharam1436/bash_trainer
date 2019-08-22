@@ -1,0 +1,21 @@
+
+In order to navigate the Linux Directories, you need to know three commands
+
+`ls`
+`pwd`
+`cd`
+
+The first command you need to know is
+`ls` (list command.)
+
+when you type `ls` on the terminal, it will list directories (folders) on your
+current location.
+
+Caution:
+ Linux is case-sensitive system, so when you type the command, don't type `Ls`
+ or `LS`
+
+ Let's see what `ls` command shows.
+
+ <type `ls` command>
+

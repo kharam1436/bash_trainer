@@ -1,0 +1,5 @@
+
+In case you want to see both hidden files and details of the file, you can also
+combine the command.
+
+<type `ls -al`>

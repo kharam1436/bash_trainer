@@ -1,0 +1,7 @@
+
+Welcome to the Linux tutorial. You've successfully logged into Linux Server.
+
+Through this tutorial, you will learn Linux basic command and prepare course
+work.
+
+When you are ready, press any key to proceed.

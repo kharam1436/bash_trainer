@@ -1,0 +1,6 @@
+#Hidden files
+.*
+*~*
+
+# build files
+cmake-build-debug/
