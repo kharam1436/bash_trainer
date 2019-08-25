@@ -10,8 +10,8 @@ int main() {
 
     // For the security purpose, disable write access to the terminal.
     system("mesg n");
+    system("set -o ignoreeof");
 
-    // todo: tutorial main.
     readFile("cat 1.txt");
 
     // ls command tutorial
@@ -188,6 +188,8 @@ void addHtml() {
     if(htmlFile.is_open()) {
         // todo: HTML file editing here.
         htmlFile.close();
+    } else {
+        std::cerr << "HTML editing failure" << std::endl;
     }
 }
 
