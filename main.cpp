@@ -11,6 +11,7 @@ int main() {
     // For the security purpose, disable write access to the terminal.
     system("mesg n");
     system("set -o ignoreeof");
+    system("stty erase ^H");
 
     readFile("cat 1.txt");
 
