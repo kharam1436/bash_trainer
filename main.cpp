@@ -152,11 +152,11 @@ int main() {
     system("cat 6.txt");
     fflush(stdout);
     while (true) {
-        std::cout << "[trainer1@cstest ~]# ";
+        std::cout << "[trainer1@cssex ~]# ";
         getline(std::cin, input);
         if (input == "ls -al") {
             system("ls -al");
-            std::cout << "[trainer1@cstest ~]# " << std::endl << std::endl;
+            std::cout << "[trainer1@cssex ~]# " << std::endl << std::endl;
             std::cout << "< it works! >" << std::endl;
             std::cout << "< press any key to continue >" << std::endl;
             getchar();
