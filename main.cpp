@@ -174,7 +174,7 @@ int main() {
 
 
     // Once student finish the tutorial, let them add their comment.
-//    addHtml();
+    addHtml();
     return 0;
 }
 
@@ -193,6 +193,9 @@ void addHtml() {
     htmlFile.open("./public_html/index.html", std::ios::app);
     if(htmlFile.is_open()) {
         // todo: HTML file editing here.
+//        fprintf( htmlFile, "<P>%s : %s</P><BR>\n", name, comment );
+        htmlFile << "<p>" << name << std::endl << " : " << comment << std::endl
+        << "</P><BR>" << std::endl << std::endl;
         htmlFile.close();
     } else {
         std::cerr << "HTML editing failure" << std::endl;
@@ -213,5 +216,4 @@ void veofDisable() {
     newTermios = oldTermios;
     newTermios.c_cc[VINTR] = 4;
     tcsetattr(0, TCSANOW, &newTermios);
-
 }
