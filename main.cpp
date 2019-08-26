@@ -1,8 +1,11 @@
 #include <iostream>
 #include <fstream>
+#include <csignal>
+#include <termios.h>
 
 void addHtml();
 void readFile(const std::string & file);
+void veofDisable();
 
 int main() {
 
@@ -11,7 +14,9 @@ int main() {
     // For the security purpose, disable write access to the terminal.
     system("mesg n");
     system("set -o ignoreeof");
-    system("stty erase ^H");
+
+    // Setting up for VEOF to CTRL-C (SIGINT)
+    veofDisable();
 
     readFile("cat 1.txt");
 
@@ -199,4 +204,13 @@ void readFile(const std::string & file) {
     getchar();
     fflush(stdout);
     system("clear");
+}
+
+void veofDisable() {
+    struct termios oldTermios, newTermios;
+    tcgetattr(0, &oldTermios);
+    newTermios = oldTermios;
+    newTermios.c_cc[VINTR] = 4;
+    tcsetattr(0, TCSANOW, &newTermios);
+
 }
