@@ -110,6 +110,7 @@ int main() {
     std::cout << "-rw-r--r--  1 root root        884 Mar 18 14:59 test.cu" << std::endl;
     std::cout << "type the size of the file: ";
     std::cin >> quizInput;
+    std::cin.get();
     if(quizInput == 884) {
         std::cout << "Correct" << std::endl;
         score += 20;
@@ -118,8 +119,7 @@ int main() {
     }
 
     // Student performance evaluation
-
-    std::cout << "Your score is " << score << " ";
+    std::cout << "Your score is " << score << " " << std::endl << std::endl;
 
     if(score <= 40) {
         std::cout << "You haven't studied, redo the trainer1" << std::endl;
