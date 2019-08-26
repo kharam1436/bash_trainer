@@ -200,6 +200,7 @@ void addHtml() {
 }
 
 void readFile(const std::string & file) {
+    system("clear");
     system(file.c_str());
     getchar();
     fflush(stdout);
