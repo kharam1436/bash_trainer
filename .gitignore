@@ -5,3 +5,9 @@
 # build files
 cmake-build-debug/
 CMakeFiles/
+
+# make file
+CMakeCache.txt
+Makefile
+cmake_install.cmake
+sh
