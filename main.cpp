@@ -1,3 +1,11 @@
+// The first tutorial about how to get into the server and how to navitage
+// with `ls` command. For the record purpose, trainers can left their comment
+// after finishing their practice.
+//
+// Haram Kwon
+// kharam1436@gmail.com
+// vers 1.0
+
 #include <iostream>
 #include <fstream>
 #include <csignal>
@@ -202,6 +210,7 @@ void addHtml() {
     }
 }
 
+// Read file, and show the file to the user.
 void readFile(const std::string & file) {
     system("clear");
     system(file.c_str());
@@ -210,6 +219,9 @@ void readFile(const std::string & file) {
     system("clear");
 }
 
+// CTRL+D would call feof, and it would conflict with the shell.
+// So, we overlap CTRL+D function to CTRL+C function, and CTRL+C
+// function would be disabled
 void veofDisable() {
     struct termios oldTermios, newTermios;
     tcgetattr(0, &oldTermios);
