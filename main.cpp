@@ -72,13 +72,13 @@ int main() {
 
     // Quiz for directory and file
     int score = 0;
-    int quizInput;
+    std::string quizInput;
 
     std::cout << "Decide whether it is directory or not" << std::endl;
     std::cout << "drwxr-xr-x  4 root root 4.0K Mar  4 14:56 uw-linux " << std::endl;
     std::cout << "type '1' for file, and type '2' for directory: ";
     std::cin >> quizInput;
-    if(quizInput == 2) {
+    if(quizInput == "2") {
         std::cout << "Correct" << std::endl;
         score += 20;
     } else {
@@ -88,7 +88,7 @@ int main() {
     std::cout << "drwxrwxr-x 17 root root 4.0K May 25 15:39 ansible" << std::endl;
     std::cout << "type '1' for file, and type '2' for directory: ";
     std::cin >> quizInput;
-    if(quizInput == 2) {
+    if(quizInput == "2") {
         std::cout << "Correct" << std::endl;
         score += 20;
     } else {
@@ -98,7 +98,7 @@ int main() {
     std::cout << "-rw-r--r--  1 root root 4.3G Nov 25  2018 CentOS-7-x86_64-DVD-1810.iso" << std::endl;
     std::cout << "type '1' for file, and type '2' for directory: ";
     std::cin >> quizInput;
-    if(quizInput == 1) {
+    if(quizInput == "1") {
         std::cout << "Correct" << std::endl;
         score += 20;
     } else {
@@ -108,7 +108,7 @@ int main() {
     std::cout << "-rw-r--r--  1 root root  884 Mar 18 14:59 test.cu" << std::endl;
     std::cout << "type '1' for file, and type '2' for directory: ";
     std::cin >> quizInput;
-    if(quizInput == 1) {
+    if(quizInput == "1") {
         std::cout << "Correct" << std::endl;
         score += 20;
     } else {
@@ -119,7 +119,7 @@ int main() {
     std::cout << "type the size of the file: ";
     std::cin >> quizInput;
     std::cin.get();
-    if(quizInput == 884) {
+    if(quizInput == "884") {
         std::cout << "Correct" << std::endl;
         score += 20;
     } else {
