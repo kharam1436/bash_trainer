@@ -24,6 +24,17 @@ trainer1:*:1002:1002:trainer1:/home/trainer1:/home/trainer1/sh
 
 End with an example of getting some data out of the system or using it for a little demo
 
+### docker-compose and Docker
+
+- You can start the application with **`docker-compose up --build`**
+- I've decided to provide the docker file for the trainer.
+- The compose file has open ssh port to 2222. You can access the server via following command
+
+```bash
+ssh trainer1@localhost 2222 # or ip address
+password: trainer1
+```
+
 ## Note
 This is a template. You are welcome to add trainer2 or more.
 
