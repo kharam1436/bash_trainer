@@ -1,0 +1,12 @@
+version: '3.7'
+
+services: 
+  trainer-build:
+    container_name: linux-trainer
+    build:
+      context: .
+      dockerfile: ./dockerfiles/Dockerfile
+    image: linux-trainer
+    network_mode: host
+    ports: 
+      - "2222:22"
