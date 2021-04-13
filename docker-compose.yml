@@ -7,6 +7,5 @@ services:
       context: .
       dockerfile: ./dockerfiles/Dockerfile
     image: linux-trainer
-    network_mode: host
     ports: 
-      - "2222:22"
+      - "127:0.0.1:2222:22"
