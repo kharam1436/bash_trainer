@@ -31,9 +31,12 @@ End with an example of getting some data out of the system or using it for a lit
 - The compose file has open ssh port to 2222. You can access the server via following command
 
 ```bash
-ssh trainer1@localhost 2222 # or ip address
+ssh trainer1@localhost -p 2222 # or ip address
 password: trainer1
 ```
+
+### Demo
+[![asciicast](https://asciinema.org/a/406868.svg)](https://asciinema.org/a/406868)
 
 ## Note
 This is a template. You are welcome to add trainer2 or more.
