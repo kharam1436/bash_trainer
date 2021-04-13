@@ -39,3 +39,7 @@ password: trainer1
 This is a template. You are welcome to add trainer2 or more.
 
 Thank you
+
+## Credit
+The tutorial idea comes from this website. (They have a server running tutorial in telnet.)
+www.hackerschool.org
